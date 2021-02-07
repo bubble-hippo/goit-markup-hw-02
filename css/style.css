@@ -1,0 +1,198 @@
+:root {
+  --main-cl: #757575; 
+  --title-cl: #212121;
+  --accent-cl: #2196F3;
+  --black-op100: #000000;
+  --white-op100: #ffffff;
+  --white-op60: rgba(255,255,255,0.6);
+  --dgrey-bc: #2F303A;
+  --lgrey-bc: #F5F4FA;
+  --border-cl: #EEEEEE;
+}
+  
+body {
+  font-family: Roboto, sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71;    
+  letter-spacing: 0.03em;
+
+  color: var(--main-cl);
+}
+
+/** Header and footer */
+
+.brand {
+  font-family: Raleway, sans-serif;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 1.17;
+
+  color: var(--black-op100);
+}
+
+footer .brand {
+  color: var(--white-op100);
+}
+
+.brand > span {
+  color: var(--accent-cl);
+}
+
+.nav a,
+.nav a:visited {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  color: var(--title-cl);
+}
+
+.contacts a,
+.contacts a:visited {
+  font-weight: 500;
+  letter-spacing: 0.02em;
+
+  color: currentColor;
+}
+
+.nav a:focus,
+.nav a:hover,
+.contacts a:focus,
+.contacts a:hover{
+  color: var(--accent-cl);
+}
+
+footer {
+  background-color: var(--dgrey-bc);
+}
+
+address a {
+  color: var(--white-op60)
+}
+
+address .maps {
+  color: var(--white-op100)
+}
+
+/** Index main */
+
+.hero {
+  background-color: var(--dgrey-bc);
+}
+
+h1 {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+
+  color: var(--white-op100);
+}
+
+.hero button {
+  background-color: var(--accent-cl);
+  
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
+  
+  color: var(--white-op100);
+}
+
+h2 {
+  font-weight: 700;
+  font-size: 36px;
+  line-height: 1.17;
+  text-align: center;
+  
+  color: var(--title-cl);
+}
+
+.advantages h3 {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.17; 
+  text-transform: uppercase;
+  
+  color: var(--title-cl);
+}
+
+.team {
+  background-color: var(--lgrey-bc);
+}
+
+.team li {
+  background-color: var(--white-op100);
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+
+}
+
+.team h3 {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.19; 
+  text-align: center;
+    
+  color: var(--title-cl);
+}
+
+.team p {
+  font-size: 16px;
+  line-height: 1.19;
+  text-align: center;
+}
+
+/** Potrfolio main*/
+
+.filters li {
+  background-color: var(--lgrey-bc);
+  border-radius: 4px;
+    
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+    
+  color: var(--title-cl);
+}
+
+.filters li:focus,
+.filters li:hover {
+  background-color: var(--accent-cl);
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
+  border-radius: 4px;
+    
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.63;
+  text-align: center;
+    
+  color: var(--white-op100);
+}
+
+.products li {
+  border: 1px solid var(--border-cl);
+  box-sizing: border-box;
+}
+
+.products h3 {
+  font-weight: 700;
+  font-size: 18px;
+  line-height: 2; 
+  letter-spacing: 0.06em;
+      
+  color: var(--title-cl);
+}
+
+.products p {
+  font-size: 16px;
+  line-height: 1.88;
+}
